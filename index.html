@@ -1,361 +1,89 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMPRIXA - Impulsando el crecimiento con inteligencia, estrategia y propósito</title>
-    <!-- Enlace a Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configuración de la fuente Inter y colores de Tailwind -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* Fondo gris azulado muy claro */
-            color: #334155; /* Texto principal gris oscuro */
-        }
-        .section-heading {
-            color: #1e40af; /* Azul oscuro para títulos de sección */
-            position: relative;
-            padding-bottom: 0.75rem; /* Espacio para el subrayado */
-            margin-bottom: 2rem;
-        }
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 60px; /* Longitud del subrayado */
-            height: 4px;
-            background-color: #22c55e; /* Verde vibrante para el subrayado */
-            border-radius: 2px;
-        }
-        .accent-color {
-            color: #22c55e; /* Verde vibrante para acentos */
-        }
-        .bg-accent {
-            background-color: #22c55e; /* Verde vibrante para fondos de acento */
-        }
-        .border-accent {
-            border-color: #22c55e; /* Verde vibrante para bordes de acento */
-        }
-        .card {
-            background-color: #ffffff;
-            border-radius: 0.75rem; /* rounded-lg */
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
-            padding: 2.5rem; /* p-10 */
-            transition: transform 0.3s ease-in-out;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .nav-link {
-            transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
-        }
-        .nav-link:hover {
-            color: #22c55e; /* Verde al pasar el ratón */
-            transform: translateY(-2px);
-        }
-
-        /* Animaciones para una entrada más suave */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeInScale {
-            from { opacity: 0; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease-out forwards;
-            opacity: 0;
-        }
-        .animate-fade-in-scale {
-            animation: fadeInScale 0.8s ease-out forwards;
-            opacity: 0;
-        }
-        /* Retrasos para las secciones */
-        #inicio .card:nth-child(1) { animation-delay: 0.2s; }
-        #inicio .card:nth-child(2) { animation-delay: 0.4s; }
-        #sobre-nosotros .card:nth-child(1) { animation-delay: 0.6s; }
-        #sobre-nosotros .card:nth-child(2) { animation-delay: 0.8s; }
-        #sobre-nosotros .card:nth-child(3) { animation-delay: 1.0s; }
-        #portafolio-servicios .service-category { animation-delay: 1.2s; }
-        #modelos-entrega { animation-delay: 1.4s; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMPRIXA - Impulsando el crecimiento con inteligencia, estrategia y propósito</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+    }
+    .section-title {
+      color: #1e40af;
+    }
+    .accent-color {
+      color: #22c55e;
+    }
+    .bg-accent {
+      background-color: #22c55e;
+    }
+    .border-accent {
+      border-color: #22c55e;
+    }
+  </style>
 </head>
 <body class="antialiased">
 
-    <!-- Encabezado / Hero Section -->
-    <header class="bg-gradient-to-br from-blue-800 to-blue-950 text-white py-20 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden rounded-b-3xl shadow-xl">
-        <div class="absolute inset-0 bg-pattern opacity-10"></div> <!-- Fondo sutil -->
-        <div class="max-w-5xl mx-auto relative z-10">
-            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight animate-fade-in-scale">EMPRIXA</h1>
-            <p class="text-xl sm:text-2xl lg:text-3xl font-light mb-10 animate-fade-in-scale" style="animation-delay: 0.2s;">Impulsando el crecimiento con inteligencia, estrategia y propósito.</p>
-            <a href="#inicio" class="inline-block bg-accent hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 text-lg animate-fade-in-scale" style="animation-delay: 0.4s;">
-                Descubre cómo podemos ayudarte
-            </a>
-        </div>
-    </header>
+  <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-16 px-4 sm:px-6 lg:px-8 text-center rounded-b-lg shadow-lg">
+    <div class="max-w-4xl mx-auto">
+      <!-- Logo agregado -->
+      <img src="emprixa-logo.png" alt="Logo de EMPRIXA" class="mx-auto mb-6 w-64" />
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 animate-fade-in-down">EMPRIXA</h1>
+      <p class="text-xl sm:text-2xl lg:text-3xl font-light mb-8 animate-fade-in-up">
+        Impulsando el crecimiento con inteligencia, estrategia y propósito.
+      </p>
+      <a href="#que-es" class="inline-block bg-accent hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+        Conoce más
+      </a>
+    </div>
+  </header>
 
-    <!-- Barra de Navegación -->
-    <nav class="sticky top-0 z-50 bg-white shadow-lg py-4">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center space-x-8">
-            <a href="#inicio" class="text-gray-700 hover:text-accent font-semibold text-lg nav-link">Inicio</a>
-            <a href="#sobre-nosotros" class="text-gray-700 hover:text-accent font-semibold text-lg nav-link">Sobre Nosotros</a>
-            <a href="#portafolio-servicios" class="text-gray-700 hover:text-accent font-semibold text-lg nav-link">Portafolio de Servicios</a>
-        </div>
-    </nav>
+  <!-- ... TU CONTENIDO EXISTENTE VA AQUÍ (puedes pegar el resto sin cambios) ... -->
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <!-- Nueva sección de contacto -->
+  <section id="contacto" class="bg-white p-8 rounded-lg shadow-md animate-fade-in mt-12">
+    <h2 class="text-3xl font-bold section-title mb-6 border-b-2 border-blue-200 pb-2">Contacto</h2>
+    <p class="text-lg leading-relaxed">
+      Puedes comunicarte con nosotros por correo electrónico a:
+      <a href="mailto:clientes@emprixa.com" class="text-blue-700 font-semibold underline">clientes@emprixa.com</a>
+    </p>
+  </section>
 
-        <!-- Sección: 1. Inicio -->
-        <section id="inicio" class="mb-16">
-            <h2 class="text-4xl font-extrabold section-heading text-center mb-12 animate-fade-in">Inicio</h2>
+  <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8 text-center rounded-t-lg shadow-inner mt-12">
+    <p class="text-lg">&copy; 2025 EMPRIXA. Todos los derechos reservados.</p>
+    <p class="text-md mt-2">Impulsando el crecimiento con inteligencia, estrategia y propósito.</p>
+  </footer>
 
-            <!-- Propuesta de Valor -->
-            <div class="card p-10 mb-12 animate-fade-in-scale">
-                <h3 class="text-3xl font-bold text-blue-700 mb-6">Nuestra Propuesta de Valor</h3>
-                <p class="text-xl leading-relaxed">
-                    En EMPRIXA ayudamos a empresarios y emprendedores a tomar decisiones con criterio, estructura y visión. Nuestra fórmula combina asesoría especializada, formación práctica y acompañamiento humano, para lograr resultados tangibles con sentido social y financiero.
-                </p>
-            </div>
-
-            <!-- ¿Qué es EMPRIXA? -->
-            <div class="card p-10 animate-fade-in-scale">
-                <h3 class="text-3xl font-bold text-blue-700 mb-6">¿Qué es EMPRIXA?</h3>
-                <p class="text-xl leading-relaxed">
-                    EMPRIXA es una firma guatemalteca de consultoría y formación empresarial, especializada en acompañar el desarrollo de pequeñas, medianas y microempresas mediante soluciones accesibles, estratégicas y de alto impacto. Nuestra razón de ser es facilitar el acceso a conocimientos, herramientas y asesoría de primer nivel para empresas que buscan crecer, transformarse y profesionalizar su operación.
-                </p>
-            </div>
-        </section>
-
-        <!-- Sección: 2. Sobre Nosotros -->
-        <section id="sobre-nosotros" class="mb-16">
-            <h2 class="text-4xl font-extrabold section-heading text-center mb-12 animate-fade-in">Sobre Nosotros</h2>
-
-            <!-- Fundamento Profesional -->
-            <div class="card p-10 mb-12 animate-fade-in-scale">
-                <h3 class="text-3xl font-bold text-blue-700 mb-6">Fundamento Profesional</h3>
-                <p class="text-xl leading-relaxed mb-4">
-                    EMPRIXA está liderada por un profesional con más de 18 años de experiencia en dirección de operaciones, transformación digital, estrategia de servicio, análisis financiero y desarrollo organizacional. Esta experiencia incluye liderazgo de equipos numerosos, ejecución de múltiples proyectos simultáneos, diseño e implementación de modelos de atención centrados en el cliente, optimización de procesos y uso de herramientas tecnológicas para la toma de decisiones.
-                </p>
-                <p class="text-xl leading-relaxed">
-                    Su formación incluye maestrías en Finanzas y en Ingeniería Administrativa, y especializaciones en metodologías ágiles, Business Intelligence, riesgo financiero y liderazgo. Además, cuenta con experiencia como docente universitario de posgrado, fortaleciendo su enfoque de transferencia de conocimiento aplicado.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <!-- Misión -->
-                <div class="card p-10 animate-fade-in-scale">
-                    <h3 class="text-3xl font-bold text-blue-700 mb-6">Misión</h3>
-                    <p class="text-xl leading-relaxed">
-                        Impulsar el desarrollo sostenible de las empresas en Guatemala mediante consultoría accesible, estratégica y humana, enfocada en crecimiento, eficiencia y transformación organizacional.
-                    </p>
-                </div>
-                <!-- Visión -->
-                <div class="card p-10 animate-fade-in-scale">
-                    <h3 class="text-3xl font-bold text-blue-700 mb-6">Visión</h3>
-                    <p class="text-xl leading-relaxed">
-                        Ser el principal aliado de crecimiento empresarial para las PYMEs y microempresas en Guatemala, liderando procesos de evolución, transformación y profesionalización con impacto social.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Diferenciadores Clave -->
-            <div class="card p-10 animate-fade-in-scale">
-                <h3 class="text-3xl font-bold text-blue-700 mb-6">Diferenciadores Clave</h3>
-                <ul class="space-y-6 text-lg">
-                    <li class="flex items-start">
-                        <span class="text-accent text-3xl mr-4 mt-1">&#10003;</span>
-                        <div>
-                            <strong class="block text-xl font-semibold">1. Experiencia ejecutiva real y multisectorial</strong>
-                            <ul class="list-disc list-inside ml-6 text-gray-700 mt-1">
-                                <li>Más de 18 años liderando operaciones, procesos, equipos y transformación empresarial.</li>
-                                <li>Consultoría desde la práctica, no desde la teoría.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-accent text-3xl mr-4 mt-1">&#10003;</span>
-                        <div>
-                            <strong class="block text-xl font-semibold">2. Modelo híbrido: asesoría + capacitación</strong>
-                            <ul class="list-disc list-inside ml-6 text-gray-700 mt-1">
-                                <li>Integramos diagnóstico, implementación y formación para transformar el negocio.</li>
-                                <li>Ideal para empresas que desean aprender mientras mejoran.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-accent text-3xl mr-4 mt-1">&#10003;</span>
-                        <div>
-                            <strong class="block text-xl font-semibold">3. Paquetes accesibles para PYMEs y emprendedores</strong>
-                            <ul class="list-disc list-inside ml-6 text-gray-700 mt-1">
-                                <li>Soluciones profesionales a precios accesibles.</li>
-                                <li>Escalabilidad para acompañar el crecimiento del cliente.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-accent text-3xl mr-4 mt-1">&#10003;</span>
-                        <div>
-                            <strong class="block text-xl font-semibold">4. Enfoque en impacto y sostenibilidad</strong>
-                            <ul class="list-disc list-inside ml-6 text-gray-700 mt-1">
-                                <li>Consultoría con propósito, basada en rentabilidad, eficiencia y transformación humana.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-accent text-3xl mr-4 mt-1">&#10003;</span>
-                        <div>
-                            <strong class="block text-xl font-semibold">5. Uso estratégico de herramientas modernas</strong>
-                            <ul class="list-disc list-inside ml-6 text-gray-700 mt-1">
-                                <li>Aplicación práctica de Power BI, Tableau, Azure DevOps, metodologías ágiles y herramientas de IA.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-accent text-3xl mr-4 mt-1">&#10003;</span>
-                        <div>
-                            <strong class="block text-xl font-semibold">6. Acompañamiento directo y humano</strong>
-                            <ul class="list-disc list-inside ml-6 text-gray-700 mt-1">
-                                <li>Nos involucramos con cada cliente con cercanía, ética y compromiso.</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-accent text-3xl mr-4 mt-1">&#10003;</span>
-                        <div>
-                            <strong class="block text-xl font-semibold">7. Diseño de portafolio modular y personalizado</strong>
-                            <ul class="list-disc list-inside ml-6 text-gray-700 mt-1">
-                                <li>Adaptación a cada etapa de madurez del negocio.</li>
-                                <li>Acompañamiento en evolución y profesionalización empresarial.</li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Sección: 3. Portafolio de Servicios EMPRIXA -->
-        <section id="portafolio-servicios" class="mb-16">
-            <h2 class="text-4xl font-extrabold section-heading text-center mb-12 animate-fade-in">Portafolio de Servicios EMPRIXA</h2>
-            <p class="text-2xl font-semibold text-center mb-10 text-gray-700 animate-fade-in">Consultoría y Capacitación para el Crecimiento Empresarial</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Categoría 1 -->
-                <div class="service-category card p-8 border-t-4 border-blue-600 animate-fade-in-scale">
-                    <h3 class="text-2xl font-bold text-blue-800 mb-4">1. Estrategia, Proyectos y Transformación Digital</h3>
-                    <h4 class="text-xl font-medium text-gray-700 mb-2">Consultoría:</h4>
-                    <ul class="list-disc list-inside text-lg space-y-1 text-gray-600 mb-4">
-                        <li>Diagnóstico estratégico empresarial</li>
-                        <li>Diseño e implementación de oficinas de proyectos (PMO)</li>
-                        <li>Transformación digital en pymes</li>
-                        <li>Metodologías ágiles (SCRUM, OKR, LEAN, Six Sigma)</li>
-                        <li>Automatización de procesos y eficiencia operativa</li>
-                        <li>Modelos de servicio multicanal</li>
-                    </ul>
-                    <h4 class="text-xl font-medium text-gray-700 mb-2">Capacitación:</h4>
-                    <ul class="list-disc list-inside text-lg space-y-1 text-gray-600">
-                        <li>Gestión de proyectos por etapas con enfoque ágil</li>
-                        <li>Estrategia digital para pymes</li>
-                        <li>Productividad con herramientas tecnológicas</li>
-                    </ul>
-                </div>
-
-                <!-- Categoría 2 -->
-                <div class="service-category card p-8 border-t-4 border-blue-600 animate-fade-in-scale" style="animation-delay: 1.3s;">
-                    <h3 class="text-2xl font-bold text-blue-800 mb-4">2. Finanzas Empresariales y Análisis de Datos</h3>
-                    <h4 class="text-xl font-medium text-gray-700 mb-2">Consultoría:</h4>
-                    <ul class="list-disc list-inside text-lg space-y-1 text-gray-600 mb-4">
-                        <li>Diagnóstico financiero y estructuración de modelos de costos</li>
-                        <li>Evaluación de rentabilidad y prefactibilidad de inversiones</li>
-                        <li>Modelos financieros, matrices y análisis estadístico</li>
-                        <li>Riesgo de cartera y estructuras de crédito</li>
-                    </ul>
-                    <h4 class="text-xl font-medium text-gray-700 mb-2">Capacitación:</h4>
-                    <ul class="list-disc list-inside text-lg space-y-1 text-gray-600">
-                        <li>Finanzas para gerentes no financieros</li>
-                        <li>Análisis de datos empresariales con Power BI</li>
-                        <li>Riesgos financieros y normativas</li>
-                        <li>Costeo y decisiones basadas en datos</li>
-                    </ul>
-                </div>
-
-                <!-- Categoría 3 -->
-                <div class="service-category card p-8 border-t-4 border-blue-600 animate-fade-in-scale" style="animation-delay: 1.4s;">
-                    <h3 class="text-2xl font-bold text-blue-800 mb-4">3. Experiencia del Cliente y Calidad de Servicios</h3>
-                    <h4 class="text-xl font-medium text-gray-700 mb-2">Consultoría:</h4>
-                    <ul class="list-disc list-inside text-lg space-y-1 text-gray-600 mb-4">
-                        <li>Diseño de Centros de Contacto y modelos CX</li>
-                        <li>Atención multicanal y experiencias UX/UI</li>
-                        <li>Indicadores de calidad, NPS y puntos de contacto</li>
-                        <li>Modelos centrados en el cliente</li>
-                    </ul>
-                    <h4 class="text-xl font-medium text-gray-700 mb-2">Capacitación:</h4>
-                    <ul class="list-disc list-inside text-lg space-y-1 text-gray-600">
-                        <li>Calidad de servicio con impacto</li>
-                        <li>Diseño de experiencias centradas en el cliente</li>
-                        <li>Customer Journey y mejora continua</li>
-                    </ul>
-                </div>
-
-                <!-- Categoría 4 -->
-                <div class="service-category card p-8 border-t-4 border-blue-600 animate-fade-in-scale" style="animation-delay: 1.5s;">
-                    <h3 class="text-2xl font-bold text-blue-800 mb-4">4. Desarrollo de Talento y Gestión Organizacional</h3>
-                    <h4 class="text-xl font-medium text-gray-700 mb-2">Consultoría:</h4>
-                    <ul class="list-disc list-inside text-lg space-y-1 text-gray-600 mb-4">
-                        <li>Liderazgo 360° y modelos de gestión</li>
-                        <li>Planes de formación técnica y habilidades blandas</li>
-                        <li>Evaluación de clima organizacional y cultura</li>
-                    </ul>
-                    <h4 class="text-xl font-medium text-gray-700 mb-2">Capacitación:</h4>
-                    <ul class="list-disc list-inside text-lg space-y-1 text-gray-600">
-                        <li>Formación de líderes transformacionales</li>
-                        <li>Gestión de equipos de alto desempeño</li>
-                        <li>Toma de decisiones con impacto financiero</li>
-                    </ul>
-                </div>
-
-                <!-- Categoría 5 -->
-                <div class="service-category card p-8 border-t-4 border-blue-600 animate-fade-in-scale" style="animation-delay: 1.6s;">
-                    <h3 class="text-2xl font-bold text-blue-800 mb-4">5. Mentoría PYME y Acompañamiento Emprendedor</h3>
-                    <h4 class="text-xl font-medium text-gray-700 mb-2">Consultoría:</h4>
-                    <ul class="list-disc list-inside text-lg space-y-1 text-gray-600 mb-4">
-                        <li>Acompañamiento personalizado para emprendedores</li>
-                        <li>Diagnóstico integral de crecimiento y formalización</li>
-                        <li>Reestructuración operativa y estrategia comercial</li>
-                    </ul>
-                    <h4 class="text-xl font-medium text-gray-700 mb-2">Capacitación:</h4>
-                    <ul class="list-disc list-inside text-lg space-y-1 text-gray-600">
-                        <li>Escalando tu negocio: de micro a PYME</li>
-                        <li>Herramientas digitales para emprendedores</li>
-                        <li>Finanzas básicas y modelo de negocio</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección: Modelos de entrega (manteniéndola separada para mayor claridad) -->
-        <section id="modelos-entrega" class="mb-16">
-            <h2 class="text-4xl font-extrabold section-heading text-center mb-12 animate-fade-in">Modelos de Entrega</h2>
-            <div class="card p-10 animate-fade-in-scale">
-                <ul class="list-disc list-inside text-xl space-y-3 leading-relaxed">
-                    <li>Asesoría puntual / sesiones por hora</li>
-                    <li>Proyectos de consultoría (3 a 6 meses)</li>
-                    <li>Programas formativos presenciales, virtuales o híbridos</li>
-                    <li>Paquetes accesibles para emprendedores y PYMEs</li>
-                </ul>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Pie de página -->
-    <footer class="bg-gray-900 text-white py-10 px-4 sm:px-6 lg:px-8 text-center rounded-t-3xl shadow-inner mt-12">
-        <p class="text-lg mb-2">&copy; 2025 EMPRIXA. Todos los derechos reservados.</p>
-        <p class="text-md opacity-80">Impulsando el crecimiento con inteligencia, estrategia y propósito.</p>
-    </footer>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+      opacity: 0;
+    }
+    .animate-fade-in-down {
+      animation: fadeInDown 1s ease-out forwards;
+      opacity: 0;
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
+    }
+  </style>
 
 </body>
 </html>
